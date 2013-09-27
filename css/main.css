@@ -6085,6 +6085,10 @@ body {
   bottom: -2px;
   margin-left: -10px;
   left: 50%;
+  display: none;
+}
+.primary-nav li.active .indicator-active {
+  display: block;
 }
 .primary-nav .logo {
   margin-top: -16px;
@@ -6174,6 +6178,13 @@ body {
 .login-container .login-note {
   text-align: center;
   margin-top: 10px;
+}
+.actions-col {
+  text-align: right;
+}
+.table td ul {
+  margin-left: 0;
+  padding-left: 20px;
 }
 .filler:after {
   background-color: inherit;

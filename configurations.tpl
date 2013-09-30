@@ -1,26 +1,28 @@
 	<!-- Actions Nav -->
 	<nav class="navbar navbar-default actions-nav" role="navigation">
-		<div class="navbar-header">
-			<h1 class="section-title navbar-brand"><a href="" title="Section Title" class="unstyled-link">Configurations</a></h1>
+		<div class="contain">
+			<div class="navbar-header">
+				<h1 class="section-title navbar-brand"><a href="" title="Section Title" class="unstyled-link">Configurations</a></h1>
+			</div>
+			<ul class="nav navbar-nav navbar-right navbar-actions">
+				<li><a href="" title="Cancel"><span class="glyphicon icon-stacked glyphicon glyphicon-plus"></span>Create New</a></li>
+			</ul>
 		</div>
-		<ul class="nav navbar-nav navbar-right navbar-actions">
-			<li><a href="" title="Cancel"><span class="glyphicon icon-stacked glyphicon glyphicon-plus"></span>Create New</a></li>
-		</ul>
 	</nav>
 	<!-- End Actions Nav -->
 
 	<div class="container-fluid" id="container">
-		<div class="row-fluid">
+		<div class="row-fluid contain">
 
 			<!-- Secondary Nav -->
 			<aside class="secondary">
 				<nav class="secondary-nav" role="navigation">
 					<ul class="nav nav-pills nav-stacked">
 						<li class="active">
-							<a href="">All Configurations</a>
+							<a href="?page=configurations" title="View all Configurations">All Configurations</a>
 						</li>
 						<li>
-							<a href="" title="">Create New</a>
+							<a href="?page=configurations-details" title="Create New Configuration">Create New</a>
 						</li>
 					</ul>
 				</nav>

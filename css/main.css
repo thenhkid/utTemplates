@@ -5980,6 +5980,13 @@ body {
 .main .panel-body:after {
   content: none;
 }
+.contain {
+  /*
+	max-width:1170px;
+	margin:auto;
+	*/
+
+}
 .form-group .half {
   width: 50%;
 }
@@ -6209,4 +6216,10 @@ body {
   overflow: hidden;
   height: 1%;
   zoom: 1;
+}
+.center-text {
+  text-align: center;
+}
+.half {
+  width: 50%;
 }

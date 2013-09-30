@@ -1,4 +1,9 @@
-define(['jquery'], function () {
+define(['jquery'], function ($) {
+
+	$.ajaxSetup ({
+		// Disable caching of AJAX responses
+		cache: false
+	});
 
 	var queryString = function () {
 		// This function is anonymous, is executed immediately and 
@@ -31,6 +36,21 @@ define(['jquery'], function () {
 
 	var config = {
 		'configurations' : {
+			activeNav : 1
+		},
+		'configurations-choose-fields' : {
+			activeNav : 1
+		},
+		'configurations-details' : {
+			activeNav : 1
+		},
+		'configurations-connections' : {
+			activeNav : 1
+		},
+		'configurations-data-translations' : {
+			activeNav : 1
+		},
+		'configurations-scheduling' : {
 			activeNav : 1
 		}
 	}

@@ -2,11 +2,11 @@
 	<nav class="navbar navbar-default actions-nav" role="navigation">
 		<div class="contain">
 			<div class="navbar-header">
-				<h1 class="section-title navbar-brand"><a href="" title="Section Title" class="unstyled-link">Create New Configuration</a></h1>
+				<h1 class="section-title navbar-brand"><a href="" title="Section Title" class="unstyled-link">Edit Configuration: {Configuration Name}</a></h1>
 			</div>
 			<ul class="nav navbar-nav navbar-right navbar-actions" role="navigation">
 				<li><a href="" title="Save"><span class="glyphicon glyphicon-ok icon-stacked"></span> Save</a></li>
-				<li><a href="" title="Next Step"><span class="glyphicon glyphicon-forward icon-stacked"></span>Next Step</a></li>
+				<li><a href="" title="Save &amp; Close"><span class="glyphicon glyphicon-floppy-disk icon-stacked"></span> Save &amp; Close</a></li>
 				<li><a href="" title="Cancel"><span class="glyphicon icon-stacked custom-icon icon-cancel"></span>Cancel</a></li>
 			</ul>
 		</div>
@@ -19,18 +19,19 @@
 			<!-- Secondary Nav -->
 			<aside class="secondary">
 				<nav class="secondary-nav" role="navigation">
-					<ul class="nav nav-pills nav-stacked nav-steps">
-						<li class="active"><a href="?page=configurations-details" title="Step 1: Details"><span class="badge">1</span> Details</a></li>
-						<li class="disabled"><a href="?page=configurations-choose-fields"  title="Step 2: Field Mappings"><span class="badge">2</span> Field Mappings</a></li>
-						<li class="disabled"><a href="?page=configurations-data-translations" title="Step 3: Data Translations"><span class="badge">3</span> Data Translations</a></li>
-						<li class="disabled"><a href="?page=configurations-connections" title="Step 4: Connections"><span class="badge">4</span> Connections</a></li>
-						<li class="disabled"><a href="?page=configurations-scheduling" title="Step 5: Scheduling"><span class="badge">5</span> Scheduling</a></li>
+					<ul class="nav nav-pills nav-stacked">
+						<li class="active"><a href="?page=configurations-details" title="Details">Details</a></li>
+						<li><a href="?page=configurations-choose-fields"  title="Field Mappings">Field Mappings</a></li>
+						<li><a href="?page=configurations-data-translations" title="Data Translations">Data Translations</a></li>
+						<li><a href="?page=configurations-connections" title="Connections">Connections</a></li>
+						<li><a href="?page=configurations-scheduling" title="Scheduling">Scheduling</a></li>
 					</ul>
 				</nav>
 			</aside>
 			<!-- // End Secondary Nav -->
 
 			<div class="main clearfix" role="main">
+
 				<div class="col-md-12">
 					<form role="form">
 					<div class="panel panel-default">

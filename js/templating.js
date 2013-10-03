@@ -34,6 +34,20 @@ define(['jquery'], function ($) {
 
 	var templating = function(){};
 
+	var getActiveNav = function (page) {
+
+		activeNav = null;
+
+		if (/^organizations/.test(page)) {
+			activeNav = 0;
+		}
+		else if (/^configurations/.test(page)) {
+			activeNav = 1;
+		}
+		return activeNav;
+	}
+
+	/*
 	var config = {
 		'configurations' : {
 			activeNav : 1
@@ -44,6 +58,9 @@ define(['jquery'], function ($) {
 		'configurations-details' : {
 			activeNav : 1
 		},
+		'configurations-edit-details' : {
+			activeNav : 1
+		},
 		'configurations-connections' : {
 			activeNav : 1
 		},
@@ -52,8 +69,24 @@ define(['jquery'], function ($) {
 		},
 		'configurations-scheduling' : {
 			activeNav : 1
+		},
+		'organizations' : {
+			activeNav : 0
+		},
+		'organizations-details' : {
+			activeNav : 0
+		},
+		'organizations-details-edit' : {
+			activeNav : 0
+		},
+		'organizations-configurations' : {
+			activeNav : 0
+		},
+		'organizations-providers' : {
+			activeNav : 0
 		}
 	}
+	*/
 
 	var nav = $('.primary-nav');
 
@@ -75,10 +108,12 @@ define(['jquery'], function ($) {
 			// remove active nav class on navbar
 			$('li.active', nav).removeClass('active');
 
+			activeNav = getActiveNav(queryString.page);
+
 			// add active class to activeNav index from config.
-			if( typeof config[queryString.page] !== 'undefined')
+			if(activeNav !== null)
 			{
-				$('li:eq('+ config[queryString.page].activeNav +')', nav).addClass('active');
+				$('li:eq('+ activeNav +')', nav).addClass('active');
 			}
 
 		}

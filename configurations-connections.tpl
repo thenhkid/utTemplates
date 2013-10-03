@@ -20,62 +20,30 @@
 			<!-- Secondary Nav -->
 			<aside class="secondary">
 				<nav class="secondary-nav" role="navigation">
-					<ul class="nav nav-pills nav-stacked">
-						<li>
-							<a href="?page=configurations" title="View all Configurations">All Configurations</a>
+					<ul class="nav nav-pills nav-stacked nav-steps">
+						<li class="complete">
+							<a href="?page=configurations-details" title="Step 1: Details">
+								<span class="badge badge-icon glyphicon glyphicon-ok"></span> Details
+							</a>
 						</li>
-						<li>
-							<a href="?page=configurations-details" title="Create New Configuration">Create New</a>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="?page=configurations-details" title="Step 1: Details"><strong>Step 1:</strong><br/>Details</a></li>
-								<li><a href="?page=configurations-choose-fields"  title="Step 2: Field Mappings"><strong>Step 2:</strong><br/>Field Mappings</a></li>
-								<li><a href="?page=configurations-data-translations" title="Step 3: Data Translations"><strong>Step 3:</strong><br/>Data Translations</a></li>
-								<li class="active"><a href="?page=configurations-connections" title="Step 4: Connections"><strong>Step 4:</strong><br/>Connections</a></li>
-								<li><a href="?page=configurations-scheduling" title="Step 5: Scheduling"><strong>Step 5:</strong><br/>Scheduling</a></li>
-							</ul>
+						<li class="complete">
+							<a href="?page=configurations-choose-fields"  title="Step 2: Field Mappings">
+								<span class="badge badge-icon glyphicon glyphicon-ok"></span> Field Mappings
+							</a>
 						</li>
+						<li class="complete">
+							<a href="?page=configurations-data-translations" title="Step 3: Data Translations">
+								<span class="badge badge-icon glyphicon glyphicon-ok"></span> Data Translations
+							</a>
+						</li>
+						<li class="active"><a href="?page=configurations-connections" title="Step 4: Connections"><span class="badge">4</span> Connections</a></li>
+						<li class="disabled"><a href="?page=configurations-scheduling" title="Step 5: Scheduling"><span class="badge">5</span> Scheduling</a></li>
 					</ul>
 				</nav>
 			</aside>
 			<!-- // End Secondary Nav -->
 
 			<div class="main clearfix" role="main">
-
-				<!-- Subnav (if needed) -->
-				<nav class="sub-nav" role="navigation">
-					<ul class="nav nav-pills" >
-						<li>
-							<a href="" title="Details">
-								<span class="badge">1</span>
-								Details
-							</a>
-						</li>
-						<li >
-							<a href="" title="Field Mappings">
-								<span class="badge">2</span>
-								Field Mappings
-							</a>
-						</li>
-						<li >
-							<a href="" title="Data Translations">
-								<span class="badge">3</span>
-								Data Translations
-							</a>
-						</li>
-						<li class="active">
-							<a href="" title="Connections">
-								<span class="badge">4</span>
-								Connections
-							</a>
-						</li>
-						<li class="disabled">
-							<a href="" title="">
-								<span class="badge">5</span>
-								Scheduling
-							</a>
-						</li>
-					</ul>
-				</nav>
 
 				<div class="col-md-12">
 					<section class="panel panel-default">
@@ -130,8 +98,8 @@
 											<td>YMCA Nashua</td>
 											<td>8/20/2013</td>
 											<td class="actions-col">
-												<a href="" class="btn btn-default">
-													<span class="glyphicon glyphicon-edit"></span>
+												<a href="" class="btn btn-link">
+													<span class="glyphicon glyphicon-remove"></span>
 													Delete
 												</a>
 											</td>
@@ -143,50 +111,6 @@
 						</div>
 					</section>
 				</div>
-
-
-			<div class="modal fade" id="crosswalkModal" role="dialog" tabindex="-1" aria-labeledby="Edit Crosswalks" aria-hidden="true" aria-describedby="Add, edit and delete crosswalks">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h3 class="panel-title">Configuration Detail - Crosswalks</h3>
-						</div>
-						<div class="modal-body">
-							<button class="btn btn-primary btn-sm pull-right " style="margin-top:-7px; margin-right:-8px">
-								<span class="glyphicon glyphicon-plus"></span>
-							</button>
-							<table class="table table-striped table-hover">
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>Date</th>
-										<th></th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Gender</td>
-										<td>8/20/2013</td>
-										<td>
-											<a href="" class="btn btn-link"><span class="glyphicon glyphicon-search"></span> View</a> 
-											<a href="" title="" class="btn btn-link"><span class="glyphicon glyphicon-remove"></span> Delete</a>
-										</td>
-									</tr>
-									<tr>
-										<td>Gender</td>
-										<td>8/20/2013</td>
-										<td>
-											<a href="" class="btn btn-link"><span class="glyphicon glyphicon-search"></span> View</a> 
-											<a href="" title="" class="btn btn-link"><span class="glyphicon glyphicon-remove"></span> Delete</a>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
 
 			</div>
 		</div>

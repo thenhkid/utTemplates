@@ -8,7 +8,7 @@
 				<li><a href="" title="Save"><span class="glyphicon glyphicon-ok icon-stacked"></span> Save</a></li>
 				<li><a href="" title="Previous Step"><span class="glyphicon glyphicon-backward icon-stacked"></span> Prev Step</a></li>
 				<li><a href="" title="Next Step"><span class="glyphicon glyphicon-forward icon-stacked"></span>Next Step</a></li>
-				<li><a href="" title="Cancel"><span class="glyphicon icon-stacked custom-icon icon-cancel"></span>Cancel</a></li>
+				<li><a href="?page=configurations" title="Cancel"><span class="glyphicon icon-stacked custom-icon icon-cancel"></span>Cancel</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -20,62 +20,22 @@
 			<!-- Secondary Nav -->
 			<aside class="secondary">
 				<nav class="secondary-nav" role="navigation">
-					<ul class="nav nav-pills nav-stacked">
-						<li>
-							<a href="?page=configurations" title="View all Configurations">All Configurations</a>
+					<ul class="nav nav-pills nav-stacked nav-steps">
+						<li class="complete">
+							<a href="?page=configurations-details" title="Step 1: Details">
+								<span class="badge badge-icon glyphicon glyphicon-ok"></span> Details
+							</a>
 						</li>
-						<li>
-							<a href="?page=configurations-details" title="Create New Configuration">Create New</a>
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="?page=configurations-details" title="Step 1: Details"><strong>Step 1:</strong><br/>Details</a></li>
-								<li class="active"><a href="?page=configurations-choose-fields"  title="Step 2: Field Mappings"><strong>Step 2:</strong><br/>Field Mappings</a></li>
-								<li><a href="?page=configurations-data-translations" title="Step 3: Data Translations"><strong>Step 3:</strong><br/>Data Translations</a></li>
-								<li><a href="?page=configurations-connections" title="Step 4: Connections"><strong>Step 4:</strong><br/>Connections</a></li>
-								<li><a href="?page=configurations-scheduling" title="Step 5: Scheduling"><strong>Step 5:</strong><br/>Scheduling</a></li>
-							</ul>
-						</li>
+						<li class="active"><a href="?page=configurations-choose-fields"  title="Step 2: Field Mappings"><span class="badge">2</span> Field Mappings</a></li>
+						<li class="disabled"><a href="?page=configurations-data-translations" title="Step 3: Data Translations"><span class="badge">3</span> Data Translations</a></li>
+						<li class="disabled"><a href="?page=configurations-connections" title="Step 4: Connections"><span class="badge">4</span> Connections</a></li>
+						<li class="disabled"><a href="?page=configurations-scheduling" title="Step 5: Scheduling"><span class="badge">5</span> Scheduling</a></li>
 					</ul>
 				</nav>
 			</aside>
 			<!-- // End Secondary Nav -->
 
 			<div class="main clearfix" role="main">
-
-								<!-- Subnav (if needed) -->
-				<nav class="sub-nav" role="navigation">
-					<ul class="nav nav-pills" >
-						<li>
-							<a href="" title="">
-								<span class="badge">1</span>
-								Details
-							</a>
-						</li>
-						<li class="active">
-							<a href="" title="">
-								<span class="badge">2</span>
-								Field Mappings
-							</a>
-						</li>
-						<li class="disabled">
-							<a href="" title="">
-								<span class="badge">3</span>
-								Data Translations
-							</a>
-						</li>
-						<li class="disabled">
-							<a href="" title="">
-								<span class="badge">4</span>
-								Connections
-							</a>
-						</li>
-						<li class="disabled">
-							<a href="" title="">
-								<span class="badge">5</span>
-								Scheduling
-							</a>
-						</li>
-					</ul>
-				</nav>
 
 				<div class="col-md-12">
 					<section class="panel panel-default">

@@ -14,9 +14,24 @@ require.config({
 
 require(['jquery', 'templating', 'bootstrap', 'responsive-tables'], function ($, templating) {
 
-	var templatingEngine = new templating();
-	templatingEngine.init();
+	// for template dev opnly
+		var templatingEngine = new templating();
+		templatingEngine.init();
+	// end for template dev only
 
+
+	// modify bootstrap modal to handle spacing for scroll bars more elegantly
+		$(document).on('show.bs.modal',  '.modal', function () {
+			var windowHeight = $(window).height();
+			var contentHeight = $('.wrap').outerHeight();
+
+			// if the window is NOT scrollable, remove the class "modal-open".
+			// This gets rid of the right margin added to the page.
+			if (windowHeight >= contentHeight) {
+				$(document.body).removeClass('modal-open');
+			}
+		})
 });
+
 
 

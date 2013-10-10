@@ -16,6 +16,7 @@
 	<div class="container-fluid" id="container">
 		<div class="row-fluid contain">
 
+
 			<!-- Secondary Nav -->
 			<aside class="secondary">
 				<nav class="secondary-nav" role="navigation">
@@ -33,7 +34,14 @@
 			<div class="main clearfix" role="main">
 
 				<div class="col-md-12">
+
+					<div class="alert alert-success"><strong>Success!</strong> New User Added!</div>
+					<div class="alert alert-info"><strong>Info:</strong> You can now add more users!</div>
+					<div class="alert alert-warning"><strong>Warning!</strong> User added but something went wrong!</div>
+					<div class="alert alert-danger"><strong>Error!</strong> User not added!</div>
+
 					<form role="form">
+
 					<div class="panel panel-default">
 							<div class="panel-heading">
 								<h3 class="panel-title">System Users</h3>
@@ -102,7 +110,6 @@
 						<h3 class="panel-title">Add System Users</h3>
 					</div>
 					<div class="modal-body">
-
 							<div class="form-container">
 								<div class="form-group">
 									<div>

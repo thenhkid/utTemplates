@@ -4,7 +4,8 @@ require.config({
 		'jquery' : 'vendor/jquery-1.10.1.min',
 		'bootstrap' : 'vendor/bootstrap.min',
 		'responsive-tables' : 'vendor/responsive-tables',
-		'templating' : 'templating'
+		'templating' : 'templating',
+		'modalUtils' : 'mediaModal'
 	},
 	shim: {
 		'bootstrap': ['jquery'],
@@ -12,7 +13,7 @@ require.config({
 	}
 });
 
-require(['jquery', 'templating', 'bootstrap', 'responsive-tables'], function ($, templating) {
+require(['jquery', 'templating', 'bootstrap', 'responsive-tables', 'mediaModal'], function ($, templating) {
 
 	// for template dev opnly
 		var templatingEngine = new templating();
@@ -30,8 +31,5 @@ require(['jquery', 'templating', 'bootstrap', 'responsive-tables'], function ($,
 			if (windowHeight >= contentHeight) {
 				$(document.body).removeClass('modal-open');
 			}
-		})
+		});
 });
-
-
-

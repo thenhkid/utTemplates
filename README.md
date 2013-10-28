@@ -50,3 +50,7 @@ Changes
 * changed template loader (ignore)
 * removed and ignored LESS files in repository
 * Added a tags around item names in tables
+
+10/27/13:
+* Extended bootstraps modal plugin to handle images and PDFs : The same usage as bootstrap's modal plugin.  "data-title" attribute sets the modal heading. "data-target" attribute sets the target modal. If an image extension or PDF extension is found, a pre-defined modal with id="mediaModal" is used.  To work properly, the html for the media modal needs to be added to the DOM manually (see admin-template.html changes). 
+* media modals are sized dynamically to fit the image dimmensions but will not exceed the width of the window.

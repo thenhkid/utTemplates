@@ -191,30 +191,88 @@
 
 					<section class="panel panel-default">
 						<div class="panel-heading">
-							<h3 class="panel-title">Configurations</h3>
+							<h3 class="panel-title">Fixed Width Columns</h3>
 						</div>
 						<div class="panel-body">
-
-							<div class="table-actions">
-								<div class="form form-search pull-left">
-									<input type="text" class="form-control" placeholder="Search"/>
-								</div>
-								<button class="btn btn-primary btn-sm pull-right">
-									<span class="glyphicon glyphicon-plus"></span>
-								</button>
-							</div>
-
 							<div class="form-container scrollable">
 								<table class="table table-striped table-hover">
 									<thead>
 										<tr>
-											<th>Message Type</th>
+											<th style="width:100px; min-width:100px">Message Type</th>
+											<th style="width:300px; min-width:300px;">Type</th>
+											<th style="width:400px; min-width:400px;">Date</th>
+											<th>Connections</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Weight Loss</td>
+											<td>Target</td>
+											<td>8/20/2013</td>
+											<td>Nashua Primary Care<br/>St. Joes Hospital</td>
+										</tr>
+										<tr>
+											<td>Weight Loss</td>
+											<td>Target</td>
+											<td>8/20/2013</td>
+											<td>Nashua Primary Care<br/>St. Joes Hospital</td>
+										</tr>
+										<tr>
+											<td>Weight Loss</td>
+											<td>Target</td>
+											<td>8/20/2013</td>
+											<td>Nashua Primary Care<br/>St. Joes Hospital</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+
+					<section class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Combined Table</h3>
+						</div>
+						<div class="panel-body">
+							<div class="form-container scrollable">
+								<table class="table table-striped table-hover">
+									<thead>
+										<tr>
+											<th style="width:500px; min-width:500px">Message Type</th>
 											<th>Type</th>
 											<th>Date</th>
 											<th>Connections</th>
 										</tr>
 									</thead>
 									<tbody>
+										<tr class="table-section-title">
+											<td colspan="4">
+												<strong>Bucket 1 (Sender Information)</strong>
+											</td>
+										</tr>
+										<tr>
+											<td>Weight Loss</td>
+											<td>Target</td>
+											<td>8/20/2013</td>
+											<td>Nashua Primary Care<br/>St. Joes Hospital</td>
+										</tr>
+										<tr>
+											<td>Weight Loss</td>
+											<td>Target</td>
+											<td>8/20/2013</td>
+											<td>Nashua Primary Care<br/>St. Joes Hospital</td>
+										</tr>
+										<tr>
+											<td>Weight Loss</td>
+											<td>Target</td>
+											<td>8/20/2013</td>
+											<td>Nashua Primary Care<br/>St. Joes Hospital</td>
+										</tr>
+										<tr class="table-section-title">
+											<td colspan="4">
+												<strong>Bucket 2 (Recipient Information)</strong>
+											</td>
+										</tr>
 										<tr>
 											<td>Weight Loss</td>
 											<td>Target</td>

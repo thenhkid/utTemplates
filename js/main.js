@@ -21,6 +21,12 @@ require(['jquery', 'templating', 'bootstrap', 'responsive-tables', 'mediaModal']
 	// end for template dev only
 
 
+	// tooltip demo
+	$(document).tooltip({
+		selector: "[data-toggle=tooltip]",
+		container: "body"
+	})
+
 	// modify bootstrap modal to handle spacing for scroll bars more elegantly
 		$(document).on('show.bs.modal',  '.modal', function () {
 			var windowHeight = $(window).height();

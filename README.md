@@ -18,6 +18,7 @@ Urls:
 13. index.html?page=organizations-details
 14. index.html?page=organizations-sproviders
 15. index.html?page=organizations-system-users
+15. index.html?page=configurations-field-mappings
 
 Template Loading
 ----------------
@@ -54,3 +55,7 @@ Changes
 10/27/13:
 * Extended bootstraps modal plugin to handle images and PDFs : The same usage as bootstrap's modal plugin.  "data-title" attribute sets the modal heading. "data-target" attribute sets the target modal. If an image extension or PDF extension is found, a pre-defined modal with id="mediaModal" is used.  To work properly, the html for the media modal needs to be added to the DOM manually (see admin-template.html changes). 
 * media modals are sized dynamically to fit the image dimmensions but will not exceed the width of the window.
+
+
+11/18/13:
+* Added field mappings template based on HTML provided from actual UT project. 

@@ -44,6 +44,9 @@ define(['jquery'], function ($) {
 		else if (/^configurations/.test(page)) {
 			activeNav = 1;
 		}
+		else if (/^scheduler/.test(page)) {
+			activeNav = 3;
+		}
 		return activeNav;
 	}
 

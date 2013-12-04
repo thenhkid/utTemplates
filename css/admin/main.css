@@ -1,4 +1,4 @@
-@import 'responsive-tables.css';
+@import '../../css/responsive-tables.css';
 /*!
  * Bootstrap v3.0.0
  *
@@ -5918,7 +5918,7 @@ body {
   width: 100%;
 }
 .main {
-  margin-left: 160px;
+  margin-left: 170px;
 }
 .main .panel-body:before,
 .main .panel-body:after {
@@ -6081,7 +6081,7 @@ body {
   padding-bottom: 4px;
 }
 .secondary {
-  width: 160px;
+  width: 170px;
   float: left;
   height: 100%;
   position: relative;
@@ -6131,10 +6131,19 @@ body {
 .primary-nav li.active .indicator-active {
   display: block;
 }
+@media (max-width: 768px) {
+  .primary-nav li.active .indicator-active {
+    display: none;
+  }
+}
 .primary-nav .logo {
   margin-top: -16px;
   position: relative;
   top: 9px;
+}
+.primary-nav .nav > li > a {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .section-title {
   margin-top: 0;
@@ -6146,6 +6155,9 @@ body {
 .actions-nav .navbar-brand {
   padding-top: 21px;
   padding-bottom: 22px;
+}
+.actions-nav .navbar-header {
+  float: left!important;
 }
 .icon-stacked {
   display: block;
@@ -6171,6 +6183,13 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
+}
+.navbar-actions li {
+  float: left !important;
+}
+.navbar-actions.navbar-right {
+  float: right !important;
+  margin: 0 !important;
 }
 .arrow-left {
   width: 10px;
@@ -6207,18 +6226,47 @@ body {
   margin-right: -20px;
   margin-top: -20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .login-container .login .login-header-content {
   padding: 15px 20px;
   width: 100%;
   height: 100%;
+  font-weight: bold;
 }
 .login-container .login .logo {
   margin: auto;
+  display: block;
+  overflow: hidden;
+  text-indent: -99em;
 }
 .login-container .login-note {
   text-align: center;
   margin-top: 10px;
+}
+.login-container.notFound {
+  width: 640px;
+  margin-left: -320px;
+  text-align: center;
+}
+.login-container.notFound h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .login-container.notFound {
+    width: 90%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    top: 20px;
+    min-width: 300px;
+  }
+  .login-container.notFound h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
 }
 .actions-col {
   text-align: right;
@@ -6245,6 +6293,9 @@ body {
   display: block;
   text-indent: -9999px;
   overflow: hidden;
+}
+.center-text {
+  text-align: center;
 }
 .basic-clearfix {
   overflow: hidden;

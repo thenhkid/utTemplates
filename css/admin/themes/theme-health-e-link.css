@@ -133,6 +133,9 @@ h3 {
 .primary-nav .navbar-nav li:last-child > a {
   border-right: 0;
 }
+.icon-bar {
+  background-color: #ffffff;
+}
 .navbar-brand,
 .navbar-brand:hover {
   color: #ffffff;
@@ -187,6 +190,7 @@ h3 {
 }
 .login .login-header {
   background-color: #666;
+  color: #fff;
 }
 .table-default {
   border-bottom: 1px solid #efefef;
@@ -195,7 +199,8 @@ h3 {
   background-color: #fff;
   font-size: 14px;
 }
-body#login {
+body#login,
+body#notFound {
   background-color: #efefef;
 }
 .btn-secondary {
